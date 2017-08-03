@@ -1,0 +1,38 @@
+﻿/*公共样式*/
+* {
+    padding: 0;
+    margin: 0;
+}
+table{
+    border-collapse:collapse;
+}
+
+
+
+em{
+    font-style:italic;
+    font-family:"楷体","微软雅黑";//浏览器的默认的字体
+    font-size:18px;
+    font-weight:600 ;//字体的粗细
+    text-decoration:line-through;
+}
+
+.table,.table td{
+    border:solid 1px red;
+}
+
+.div {//class
+    background-color: red; //犯得上发射点
+}
+
+.div .span {
+    background-color: yellow;
+
+}
+
+#container{
+    width:80%;
+    background-color:aqua;
+    height:800px;
+    margin:auto;
+}
