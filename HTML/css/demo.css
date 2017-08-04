@@ -3,17 +3,17 @@
     padding: 0;
     margin: 0;
 }
+html{
+}
 table{
     border-collapse:collapse;
 }
 
-
-
 em{
     font-style:italic;
-    font-family:"楷体","微软雅黑";//浏览器的默认的字体
+    font-family:"楷体","微软雅黑";/*浏览器的默认的字体*/
     font-size:18px;
-    font-weight:600 ;//字体的粗细
+    font-weight:600 ;/*字体的粗细*/
     text-decoration:line-through;
 }
 
@@ -21,8 +21,9 @@ em{
     border:solid 1px red;
 }
 
-.div {//class
-    background-color: red; //犯得上发射点
+.div {
+
+    background-color: red; /*犯得上发射点*/
 }
 
 .div .span {

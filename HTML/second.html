@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>html的属性与css的基本编写</title>
+    <meta charset="utf-8" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" /><!--外联写法-->
+    <link href="css/layerout.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--内嵌写法-->
+
+
+    <div id="container" class=""  onclick="">
+        <nav class="nav">
+            <span>首页</span>
+            <span>产品介绍</span>
+            <span>联系我们</span>
+            <label>帮助</label>
+        </nav>
+        <section class="content">
+            <div class="red">fdsaf </div>
+            <article><p class="red">fsdfsadf </p></article>
+            <div lt-div lt-border>我是一个比较掉的div</div>
+            <div lt-div="你好啊">我是一个比较掉的div</div>
+            <div lt-div="你好啊1">我是一个比较掉的div</div>
+            <div lt-div="你好啊2">我是一个比较掉的div</div>
+            <div lt-div="a你好啊2">我是一个比较掉的div</div>
+            <input type="text" />
+        </section>
+        <button onclick="btnClick(this)">我是一个按钮</button>
+        <span onclick="spanClick(this)">我是一个span标签</span>
+    </div>
+
+    <script>
+        function btnClick(mark) {
+            console.log(mark.innerText) //小驼峰，大驼峰    名字 的命名方式 btnClickId       大驼峰 BtnClickId 
+        }
+        function spanClick(mark) {
+            console.log(mark.innerText)
+        }
+    </script>
+</body>
+</html>

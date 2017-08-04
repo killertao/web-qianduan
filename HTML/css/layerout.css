@@ -1,0 +1,73 @@
+﻿#container {  /*id选择器*/
+    width:80%;
+    height:100%; /*通百分比是相对于父元素而言*/
+    background-color:burlywood;
+    margin:auto;
+}
+body {/*标记*/
+   height:800px;    
+}
+.nav {/*类选择器 */
+    height: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+/*子代选择其*/
+    .nav>span,.nav>label {
+        /*width:100px;*/
+        background-color:orange;
+        border-right:solid 2px white;
+    }
+    /*分组选择器*/
+    .nav > label {
+
+    }
+/*后代选择器*/
+.content .red {
+    color:red;
+}
+/*属性选择器*/
+[lt-div] {
+    background-color:aqua;
+    margin-top:5px;
+}
+[lt-border] {
+    border-top:solid 5px white;
+}
+div[lt-div=你好啊] {
+    color:yellow;
+}
+div[lt-div*=你好啊] {
+    text-decoration:line-through;
+}
+div[lt-div^=a] {
+    text-decoration:underline;
+}
+div[lt-div$='2'] {
+   font-size:20px;
+}
+/*伪类选择器*/
+ .nav>span:hover {/*停留在上面的样式*/
+  background-color:white;
+}
+input:focus {/*获取焦点*/
+     border:solid 3px green;
+}
+:first-child {/*第一个子代*/
+           
+}
+:last-child {/*最后一个子代*/
+
+}
+:nth-child(2n+1) {
+}
+:nth-child(even) {
+
+}
+:nth-child(odd) {
+
+}
+
+   
+/*css盒模型*/

@@ -1,0 +1,12 @@
+﻿/*公共样式*/
+* {/*通配符选择器*/
+    padding: 0;
+    margin: 0;
+}
+html{/*标记*/
+}
+table{
+    border-collapse:collapse;
+}
+
+
