@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="css/common.css" rel="stylesheet" />
+    <style>
+        .container {
+            background-color: #f3f3f3;
+        }
+
+        .bootom {
+            background-color: #f3f3f3;
+        }
+        /*flex布局**/
+        .header {
+            position: relative;
+            height: 60px;
+        }
+
+        .top {
+            height: 200px;
+        }
+
+        .bootom {
+            height: 600px;
+            width: 60%;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        .header, .top, .left, .right {
+            background-color: #ffffff;
+        }
+        .right,.left {
+              height: 100%;
+             float:left
+        }
+        .left {
+            width: 60%;
+            height: 100%;
+            /*background-color: red;*/
+            float:left;
+        }
+        .right {
+            margin-left:1%;
+            width: 39%;
+            /*background-color: yellow;*/
+        }
+
+        .bootomLine {
+            border-bottom: solid 2px #f3f3f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header bootomLine">头</header>
+        <div class="content ">
+            <div class="top ">内容上面fdsf </div>
+            <div class="bootom bootomLine ">
+                <div class="left">fdsfsd </div>
+                <div class="right">fsdfsdf sfd</div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+
+</body>
+</html>
