@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" /
+    <link href="../../css/common.css" rel="stylesheet" />
+    <style>
+        .container {
+            width: 60%;
+            background-color: navajowhite;
+            margin: 0 auto;
+            height: 600px;
+            /*text-align:center;*/
+        }
+
+        .center {
+            text-align: center; /*可以被子标签集成*/
+        }
+
+        .lineP {
+            border: solid 1px;
+        }
+
+        .inlineblock {
+            border: solid 1px;
+            display: inline-block; /*设置块标签*/
+            height: 50px;
+        }
+        .divcenter {
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lineP center">
+            <!--样式的继承-->
+            <a>f防守打法</a><span>nifdsfsdafsd</span>
+        </div>
+        <div class="lineP ">
+            <!--样式的继承-->
+            <div class="center"><a>f防守打法</a><span>nifdsfsdafsd</span></div>
+            <p>我是p标签</p>
+        </div>
+
+        <table class="divcenter"><!--定宽块元素-->
+            <tr><td><div class="inlineblock">我是tabale里面的行内还块 元素</div></td></tr>
+        </table>
+        <div class="inlineblock">行内块元素</div>
+    </div>
+</body>
+</html>

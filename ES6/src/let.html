@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <p> let 相当于一个闭包</p>
+        <p> for 的设置循环变量是一个作用域，循环体又是一个作用域</p>
+        <p> let不存在变量声明的提升</p>
+        <p>let声明的变量在一块作用域内是占时性死区，和区域的非let const变量声明没有关系</p>
+        <p>let同一个作用域内不能重复声明</p>
+        <p>let可以增加一个块级作用域 但是只对let const 声明的变量有用</p>
+        <p>es6 中只用let多了一个块级作用域 
+        而es5中之有函数作用域 ，
+        所以经常使用匿名函数仔自执行来形成一个作用域，就是常说的闭包</p>
+    </div>
+    <script>
+        var a = [];
+        for (let i = 0; i < 10; i++) {
+            a[i] = function () {
+                console.log(i);
+            };
+        }
+        a[6](); // 6
+        var tmp = new Date();
+       
+        function f() {
+            console.log(tmp);
+            if (false) {
+                var tmp = 'hello world';
+            }
+        }
+        {
+            var m = 1;
+            let b = 1;
+
+        }
+        console.log(m);
+        function f1() {
+            let n = 5;
+            if (true) {
+               let  n = 10
+            }
+            console.log(n); // 5
+        }
+        f1();
+        let f2 = function () {
+            console.log(1);
+        }
+        function xx() {
+            var s = 1;
+            for (var i = 0; i < 1; i++) {
+                var s = 2;
+            }
+            console.log(s);
+        }
+        xx();
+       
+    </script>
+</body>
+</html>

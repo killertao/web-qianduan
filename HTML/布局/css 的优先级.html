@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="../css/common.css" rel="stylesheet" />
+    <style>
+        /*后后面加 ！!important 最高级 
+          权重>权重小的   权重样     内链>外嵌  后面覆盖前面
+        */
+        * {/*所占的权重0.1  */
+           background-color:white;
+        }
+        div {/*所在权重1*/
+        background-color:black ;
+        }
+        div.container { /*所在权重10*/
+           background-color:red ;
+        }
+        div#container { /*所在权重100*/
+                      background-color:red ;
+        }
+        #container { /*所在权重100*/
+                      background-color:red ;
+        }
+
+        vv {
+
+        }
+       
+    </style>
+</head>
+<body>
+      <div class="container">
+          
+      </div>
+      <div class="vv"></div>
+</body>
+</html>

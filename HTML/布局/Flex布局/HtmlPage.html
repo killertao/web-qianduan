@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<title></title>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <link href="../../css/common.css" rel="stylesheet" />
+    
+    <!--<script src="../../../flexbile.js"></script>-->
+    <style>
+        div, section, header {
+            width:100%;
+        }
+        .head {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            font: 900 30px #ff6a00; /*16 rgb english*/
+            text-align: center;
+            border: solid 2px #f39756;
+            background-color: aqua;
+        }
+
+        .container {
+        }
+        .content {
+           width:80%;
+           height:800px;
+           background-color:bisque;
+           align-items:center;
+           display:flex;
+           justify-content:center;
+
+        }
+        .section {
+            margin-top: 50px;
+            height:600px;
+            background:#0094ff;
+            border:red solid 1px;
+            width:80%;
+        }
+
+     
+
+        .flex {
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: column;
+            justify-content: center;
+            align-items: baseline;
+            align-content: flex-start;
+        }
+        .flex-center {
+            display:flex;
+            justify-content:center;
+        }
+       
+    </style>
+</head>
+<body >
+    <header class="head">flex布局</header>
+    <div class="flex-center">
+        <div class="content">
+            <section class="section">fsdfasd</section>
+        </div>
+    </div>
+  
+</body>
+</html>

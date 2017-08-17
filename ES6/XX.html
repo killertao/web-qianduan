@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script>
+        class People {
+            constructor(name) {
+                this.name = name;
+            }
+            say() {
+                console.log("我的名字是" + this.name);
+            }
+        };
+        let peo = new People("李涛");
+        console.log(peo.name);
+        peo.say();
+        class Man extends People {
+            constructor(name, sex) {
+                super();
+                //this.name = name;
+                this.sex = sex;
+            }
+            say2() {
+                console.log("性别" +this.sex);
+            }
+        
+        }
+        let m1 = new Man("李涛", "男");
+        m1.say2();
+        m1.say();
+
+
+        var s = (a=2, b=3) => {
+            return a + b;
+        }
+       
+        //箭头函数的this 是集成外面的
+
+        const name = "李涛";
+        let love = `${name}fsdfsdf`;
+        console.log(love);
+
+
+        let cat = 'ken'
+        let dog = 'lili'
+        let zoo = { cat, dog}
+        console.log(zoo)  //Object {cat: "ken", dog: "lili"}
+        var obj1={
+            a:1,
+            b:2
+
+        };
+        for (let key in obj1) {
+            console.log(key);
+        }
+        //for(val of obj1){
+        //    console.log(val);
+        //}
+        var map = new Map();
+        map.set('first', 'hello');
+        map.set('second', 'world');
+
+        for (let [key, value] of map) {
+          console.log(key + " is " + value);
+        }
+            //includes startsWith endWith 类似indexOf
+            //repeat padStart padEnd
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,755 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        header {
+            position:fixed;
+            width:100%;
+            background-color:orange;
+        }
+        .content {
+            height:600px;
+            
+        }  
+       
+    </style>
+</head>
+<body>
+    <header>fsdfsa</header>
+    <div class="content">
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照 百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照 百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照 百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照 百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        相关搜索
+        百度为您找到相关结果约12,400个
+        css菜鸟:为什么当Position为absolute时,z-index就无效..._百度知道
+        3个回答 - 最新回答: 2011年06月28日 - 21人觉得有用
+        最佳答案: Position属性 absolute:生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 元素的位置通过 "left", "top", "right" 以及 "bottom"...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        为您推荐：canvas z-indexcss z index不起作用css positionoverflow
+        CSS基础(七):z-index详解 - ForEvErNoMe - 博客园
+
+        2013年10月17日 - 1. 对于同级元素,默认(或position:static)情况下文档流后面的元素会覆盖前面的。 2. 对于同级元素,position不为static且z-index存在的情况下z-index大的元素会覆盖...
+        www.cnblogs.com/ForEvE...  - 百度快照
+        DIV+CSS中z-index的应用_百度文库
+        2013年5月3日 - 静态定位:position:static(为 position 属性的默认值) 。 2. 动态定位:position:relative 或 position:absolute 或 position:fixed。 1,无 z-index 设...
+        https://wenku.baidu.com/view/4...  - 百度快照
+        深入理解css中position属性及z-index属性 - Wayne-Zhu - 博客园
+
+        最后将会介绍和position属性密切相关的z-index属性。 第一部分:position: static static定位是HTML元素的默认值,即没有定位,元素出现在正常的流中,因此,这种定位就...
+        www.cnblogs.com/zhuzhe...  - 百度快照
+        深刻解析position属性以及与层(z-index)的关系 - limli..._CSDN博客
+        2014年6月3日 - (2)将span的父元素li的z-index:2,则span马上在li的上面3、解析:position的4种属性:static静态定位,默认值relative、absolute、position非静态定位...
+        blog.csdn.net/limlimli...  - 百度快照
+        position属性设置成fixed,而且也设置了z-index的值,但..._百度知道
+        2个回答 - 最新回答: 2015年04月18日
+        最佳答案: 我猜z-index的值,不够大。 下面的图没有必要fixed
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+        z-index的工作原理_CSS, z-index 教程_w3cplus
+        2015年12月29日 - 即拥有 relative, absolute, fixed属性的 position 元素。 z-index属性有三个可能的值: 值描述 auto 默认。堆叠顺序与父元素相等。 < integer > 设置...
+        www.w3cplus.com/css/ho...  - 百度快照
+        CSS基础:z-index详解_百度文库
+        2015年10月8日 - "position:relative;z-index:1;">B C 默认值规则 如果所有节点都定义了 position:relative. z-index 为 0 的节点与没有定义 z-index 在同 一层级内没...
+        https://wenku.baidu.com/view/1...  - 百度快照
+        关于html中z-index的问题_慕课猿问
+        2016年3月17日 - {position:absolute;然后用top:50px;}实现了效果,但是我并没有用的Z-index...首先你的浅蓝色是存在标准文档流中的position的默认值是static,你可理解...
+        www.imooc.com/wenda/de...  - 百度快照
+        css中的绝对定位 position: absolute;和z-index 等级区..._百度知道
+        2个回答 - 提问时间: 2014年05月27日
+        最佳答案: 使用 absolute 如两个绝对定位对象的 z-index 属性具有同样的值,那么将依据它们在HTML文档中声明的顺序层叠. z-index 为无单位的整数值,可为负数.按照...
+        更多关于postion 快的z-index 没有默认值吗的问题>>
+        zhidao.baidu.com/link?...  - 百度快照
+    </div>
+</body>
+</html>
+
